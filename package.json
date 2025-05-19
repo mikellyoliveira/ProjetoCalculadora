@@ -1,0 +1,39 @@
+{
+  "name": "sistema-notas",
+  "version": "1.0.0",
+  "description": "Sistema de lançamento de notas de alunos",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "serve"
+  },
+  "keywords": [
+    "notas",
+    "alunos",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "jest-sonar-reporter": "^2.0.0"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  },
+  "jestSonar": {
+    "reportPath": "coverage",
+    "reportFile": "test-report.xml",
+    "indent": 4
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov",
+      "text",
+      "html"
+    ],
+    "testResultsProcessor": "jest-sonar-reporter"
+  }
+} 
